@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#page1 h1 {
+  font-size: 9vw;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: white;
+  /* color: #0ca34e; */
+}
+#page1 p {
+  font-weight: 400;
+  text-align: center;
+  color: rgb(175, 175, 175);
+}
+
+#page2 {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+
+#page1Badges {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#page1Badges h4 {
+  font-size: 1.2vw;
+  font-weight: 400;
+  text-transform: lowercase;
+  padding: 5px 10px;
+  border: 1px solid #a5a5a5;
+  border-radius: 50px;
+  margin-top: 1.5vw;
+  color: #a5a5a5;
+}
+
+#page1Badges h4:nth-last-child(2) {
+  border: none;
+}
+nav {
+  position: fixed;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  padding: 2vw 8vw;
+  justify-content: space-between;
+  background-color: black;
+}
+nav h1 {
+  color: white;
+}
+nav button {
+  display: flex;
+  color: white;
+  justify-content: center;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 700;
+  background-color: #0ca34e;
+  border-radius: 50px;
+  font-size: 0.85vw;
+}
+nav button svg {
+  height: 0.85vw;
+  margin-left: 1.5vw;
+}
+
+.nav-part-2 {
+  display: flex;
+  gap: 2vw;
+  align-items: flex-start;
+  padding: 2vh;
+}
+.nav-part-2 h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.9vw;
+  color: white;
+  transition: 0.3s all ease;
+  margin-bottom: 1.5vw;
+}
+.nav-part-2 h5 span {
+  font-size: 0.9vw;
+  color: white;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.nav-part-2 h4:hover {
+  color: #0ca34e;
+}
+
+.sub-links {
+  height: 0px;
+  overflow: hidden;
+}
+/* nav:hover .sub-links{
+   height:100px;
+} */
+
+.sub-links h5 {
+  overflow: hidden;
+}
+
+#nav-bottom {
+  width: 84vw;
+  position: absolute;
+  bottom: 0%;
+  background: red;
+  border-bottom: 1px solid white;
+}
+
+#moving-div {
+  margin-top: 5vh;
+  display: flex;
+  width: 70vw;
+  gap: 2vw;
+  overflow: hidden;
+}
+
+#moving-div .move {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  animation: move;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#moving-div .move img {
+  width: 10vh;
+}
+
+
+@keyframes move {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
