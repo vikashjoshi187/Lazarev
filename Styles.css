@@ -175,18 +175,16 @@ nav button svg {
   justify-content: center;
 }
 #page2-left {
-  
   padding: 1vw;
 }
-#page2-left div{
+#page2-left div {
   padding-top: 2vw;
 }
-#page2-left div p{
+#page2-left div p {
   font-size: 1.5vh;
   color: white;
   font-weight: 200;
 }
-
 
 .accordion-button {
   background-color: transparent;
@@ -241,19 +239,144 @@ nav button svg {
 .accordion-inner-div {
   border-top: 1px solid #a5a5a5;
   padding-top: 1vw;
+  padding-bottom: 8vh;
+  position: relative;
 }
 
-.accordion-inner-div {
-  border-top: 1px solid #a5a5a5;
-  padding-top:2.5vw;
-  padding-bottom:2.5vw;
-  
+.accordion-inner-div img {
+  height: 7vw;
+  width: 7vw;
+  padding: 0px;
+  object-fit: cover;
+  margin-top: 2vw;
+  opacity: 0;
+  position: absolute;
+  scale: 0;
+  border-radius: 50%;
 }
 .heading-col h2 {
   font-size: 2.5vh;
   font-weight: 250;
 }
-.para-col p{
+.para-col p {
   font-weight: 200;
   font-size: 1.5vh;
+}
+
+#page3 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./Images/show-rell-banner.webp");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page3-center h3 {
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 1vw;
+  opacity: 0;
+  transform: translateY(10%);
+  transition: all ease 0.5s;
+}
+
+#page3-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#page3-center i {
+  font-size: 2vw;
+  color: black;
+}
+#page3-center div {
+  height: 9vw;
+  width: 9vw;
+  margin-bottom: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+}
+
+#page3-center:hover h3 {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+#page3 video {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  transform: scaleX(0.7) scaleY(0.2);
+  border-radius: 30px;
+  opacity: 0;
+  bottom: 0%;
+  top: 13vw;
+  z-index: 9999;
+}
+
+#page4 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+}
+
+.left-col div h1 {
+  font-weight: 400;
+  font-size: 5vh;
+  border-top: 2px solid black;
+  padding-top: 1.5vw;
+}
+.left-col div p {
+  font-weight: 400;
+  font-size: 2vh;
+}
+.right-col {
+  position: relative;
+}
+.right-col video {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  opacity: 0;
+}
+.right-col img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.folloing-div {
+  position: absolute;
+  height: 0vw;
+  width: 0vw;
+  padding: 2vw;
+  background-color: #0ca34e;
+  border-radius: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+  opacity: 0;
+  overflow: hidden;
+  top: 50%;
+}
+
+.folloing-div p {
+  font-weight: 400;
+  color: white;
 }
