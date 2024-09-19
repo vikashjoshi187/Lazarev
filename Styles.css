@@ -7,6 +7,7 @@
   height: 100vh;
   width: 100%;
   background-color: black;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,10 +49,12 @@ nav {
   display: flex;
   align-items: flex-start;
   width: 100%;
-  padding: 2vw 8vw;
+  padding: 1vw 8vw;
   justify-content: space-between;
   background-color: black;
+  z-index: 999999;
 }
+
 nav h1 {
   color: white;
 }
@@ -177,9 +180,9 @@ nav button svg {
 #page2-left {
   padding: 1vw;
 }
-#page2-left div {
+/* #page2-left div {
   padding-top: 2vw;
-}
+} */
 #page2-left div p {
   font-size: 1.5vh;
   color: white;
@@ -210,6 +213,33 @@ nav button svg {
   background: transparent;
   border: none;
 }
+
+#button-div {
+  background-color: #0ca34e;
+  padding: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1vw;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  position: sticky;
+  top: 20%;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#button-div>div {
+  background-color:red;
+  position: relative;
+}
+
+#button-div div span{
+  
+}
+
 
 .accordion-button:not(.collapsed) {
   color: white;
