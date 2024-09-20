@@ -86,6 +86,8 @@ hoverVideos.forEach((element) => {
       opacity: 1,
     });
 
+    
+
     gsap.to(element.childNodes[5], {
       opacity: 1,
       height: "11vw",
