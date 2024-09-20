@@ -231,15 +231,13 @@ nav button svg {
   text-transform: uppercase;
 }
 
-#button-div>div {
-  background-color:red;
+#button-div > div {
+  background-color: red;
   position: relative;
 }
 
-#button-div div span{
-  
+#button-div div span {
 }
-
 
 .accordion-button:not(.collapsed) {
   color: white;
@@ -409,4 +407,53 @@ nav button svg {
 .folloing-div p {
   font-weight: 400;
   color: white;
+}
+
+#page5 {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+#page5 > div {
+  width: 100vw;
+  padding: 1vw;
+}
+
+.page-5-col {
+  padding: 1vw;
+  border-right: 1px solid rgb(69, 69, 69);
+}
+.page-5-col:last-child{
+  border: none;
+}
+.page-5-col h5 {
+  color: rgb(1, 1, 1);
+  font-weight: 200;
+  font-size: 1.5vw;
+  margin-bottom: 2vw;
+}
+.page-5-col h4 {
+  background-color: #000000;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 1vw;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+}
+
+.page-5-col h4 span {
+  height: 1vw;
+  width: 1vw;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
 }
