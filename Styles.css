@@ -3,9 +3,17 @@
   margin: 0;
 }
 
+#page1-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #page1 {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background-color: black;
 
   display: flex;
@@ -126,7 +134,8 @@ nav button svg {
   width: 70vw;
   gap: 2vw;
   overflow: hidden;
-  position: relative;
+  position: absolute;
+  bottom: 5%;
 }
 
 #moving-div .move {
@@ -423,7 +432,7 @@ nav button svg {
   padding: 1vw;
   border-right: 1px solid rgb(69, 69, 69);
 }
-.page-5-col:last-child{
+.page-5-col:last-child {
   border: none;
 }
 .page-5-col h5 {
@@ -456,4 +465,9 @@ nav button svg {
   align-items: center;
   justify-content: center;
   border-radius: 50px;
+}
+#page6 {
+  height: 50vh;
+  width: 100vw;
+  background-color: #000000;
 }
