@@ -108,7 +108,7 @@ function page3Animation() {
   });
 }
 
-function page4Animation(params) {
+function page4Animation() {
   const hoverVideos = document.querySelectorAll(".right-col");
   hoverVideos.forEach((element) => {
     console.log(element.childNodes);
@@ -123,6 +123,8 @@ function page4Animation(params) {
         width: "11vw",
         duration: "0.5s",
         padding: "2vw",
+        opacity: 1,
+        scale: 1,
       });
     });
 
@@ -169,34 +171,38 @@ function page5Animation() {
   });
 }
 
+function loadingAnimation() {
+  var tl = gsap.timeline();
+  tl.from("#page1", {
+    opacity: 0,
+    duration: 0.3,
+    delay: 0.2,
+  });
+  tl.from("#page1", {
+    transform: "scaleX(0.7) scaleY(0)",
+    borderRadius: "10%",
+    transform: "translateY(80%)",
+    width: "50%",
+    duration: 1,
+    ease: "expo.out",
+  });
+
+  tl.from("#page1 h1,#page1 p,#page1 div", {
+    opacity: 0,
+    duration: 0.1,
+    stagger: 0.3,
+    ease: "expo.out",
+  });
+
+  tl.from("nav", {
+    opacity: 0,
+  });
+}
+
+loadingAnimation();
 locomotiveAnimation();
 navBarAnimation();
 page2Animation();
 page3Animation();
 page4Animation();
 page5Animation();
-
-var tl = gsap.timeline();
-tl.from("#page1", {
-  opacity: 0,
-  duration: 0.3,
-  delay: 0.2,
-});
-tl.from("#page1", {
-  transform: "scaleX(0.7) scaleY(0)",
-  borderRadius: "10%",
-  transform: "translateY(80%)",
-  width: "50%",
-  duration: 1,
-  ease: "expo.out",
-});
-
-tl.from("#page1 h1,#page1 p,#page1 div", {
-  opacity: 0,
-  duration: 0.1,
-  // stagger: 1,
-});
-
-tl.from("nav", {
-  opacity: 0,
-});

@@ -223,6 +223,14 @@ nav button svg {
   border: none;
 }
 
+.accordion-button:after { 
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+.accordion-button:not(.collapsed) {
+  color: var(--bs-accordion-active-color);
+  background-color: var(--bs-accordion-active-bg);
+  box-shadow: none !important;
+}
 #button-div {
   background-color: #0ca34e;
   padding: 1vw;
@@ -400,9 +408,9 @@ nav button svg {
 
 .folloing-div {
   position: absolute;
-  height: 0vw;
-  width: 0vw;
-  padding: 2vw;
+  height: 11vw;
+  width: 11vw;
+  padding: 0vw;
   background-color: #0ca34e;
   border-radius: 50%;
   display: flex;
@@ -411,6 +419,7 @@ nav button svg {
   opacity: 0;
   overflow: hidden;
   top: 50%;
+  scale: 0;
 }
 
 .folloing-div p {
